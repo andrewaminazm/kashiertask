@@ -13,11 +13,10 @@ describe(' registeration', function(){
 
 
 
-      /* ==== End Cypress Studio ==== */
-      /* ==== Generated with Cypress Studio ==== */
+  
       cy.get('#register-submit-btn').click();
       cy.wait(7000)
-      /* ==== End Cypress Studio ==== */
+      
     })
      
 
@@ -33,7 +32,7 @@ describe(' registeration', function(){
 
 
 
-      /* ==== Generated with Cypress Studio ==== */
+     
       cy.get(':nth-child(5) > .m-input-icon > .form-control').clear({force:true});
       cy.get(':nth-child(5) > .m-input-icon > .form-control').type('aaaaaaaa',{force:true});
       cy.get(':nth-child(6) > .m-input-icon > .form-control').clear({force:true});
@@ -54,7 +53,7 @@ describe(' registeration', function(){
       cy.get('#signup-form').click({force:true});
       cy.get('.m-login__signup').scrollIntoView()
       cy.get('.m-login__signup').screenshot()
-      /* ==== End Cypress Studio ==== */
+     
     })
     it(' case3', function(){
         cy.log('happy-path for registeration')
@@ -68,7 +67,7 @@ describe(' registeration', function(){
   
   
   
-        /* ==== Generated with Cypress Studio ==== */
+     
         cy.get(':nth-child(5) > .m-input-icon > .form-control').clear({force:true});
         cy.get(':nth-child(5) > .m-input-icon > .form-control').type('aaaaaaaa',{force:true});
         cy.get(':nth-child(6) > .m-input-icon > .form-control').clear({force:true});
@@ -88,7 +87,7 @@ describe(' registeration', function(){
         cy.get('#r-register-password').type('01211782855@Aa',{force:true});
         cy.get('#register-submit-btn').click();
         
-        /* ==== End Cypress Studio ==== */
+       
       })
       it(' case4', function(){
         cy.log('leave empty required field ')
@@ -102,7 +101,7 @@ describe(' registeration', function(){
   
   
   
-        /* ==== Generated with Cypress Studio ==== */
+       
        
         cy.get(':nth-child(6) > .m-input-icon > .form-control').clear({force:true});
         cy.get(':nth-child(6) > .m-input-icon > .form-control').type('andrew',{force:true});
@@ -125,7 +124,7 @@ describe(' registeration', function(){
         cy.get('.m-login__signup').scrollIntoView()
         cy.get('.m-login__signup').screenshot()
         
-        /* ==== End Cypress Studio ==== */
+        
       })
     
     
