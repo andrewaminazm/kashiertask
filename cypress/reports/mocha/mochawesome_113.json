@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-20T09:41:39.479Z",
+    "end": "2022-06-20T09:42:37.337Z",
+    "duration": 57858,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7bcf060b-0a66-4325-967a-a7516320b643",
+      "title": "",
+      "fullFile": "cypress/integration/task.spec.js",
+      "file": "cypress/integration/task.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47031cba-833f-4875-9c11-bfcac0d8e80a",
+          "title": " registeration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " case1",
+              "fullTitle": " registeration  case1",
+              "timedOut": null,
+              "duration": 16484,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('click next without enter any data');\ncy.visit('https://merchant.kashier.io/signup', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\ncy.get('#register-submit-btn').click();\ncy.wait(7000);\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "5cc2642f-eb83-47e4-bc4c-9ff2e6da64c4",
+              "parentUUID": "47031cba-833f-4875-9c11-bfcac0d8e80a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " case2",
+              "fullTitle": " registeration  case2",
+              "timedOut": null,
+              "duration": 8057,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('enter invalid data');\ncy.visit('https://merchant.kashier.io/signup', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== Generated with Cypress Studio ==== */\ncy.get(':nth-child(5) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(5) > .m-input-icon > .form-control').type('aaaaaaaa', {\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').type('11111111', {\n  force: true\n});\ncy.get('.transform-checkbox-icon').click({\n  force: true\n});\ncy.get('.m-checkbox > input').check({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').type('2323', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').type('and@', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get('#register-password').clear({\n  force: true\n});\ncy.get('#register-password').type('01222222222', {\n  force: true\n});\ncy.get(':nth-child(10) > .m-input-icon > .password-visibility > #visibility-a').click({\n  force: true\n});\ncy.get('#r-register-password').clear({\n  force: true\n});\ncy.get('#r-register-password').type('111111111111', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get('.m-login__signup').scrollIntoView();\ncy.get('.m-login__signup').screenshot();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "62939d24-af79-407c-8ef8-05ee326a238f",
+              "parentUUID": "47031cba-833f-4875-9c11-bfcac0d8e80a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " case3",
+              "fullTitle": " registeration  case3",
+              "timedOut": null,
+              "duration": 8296,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('happy-path for registeration');\ncy.visit('https://merchant.kashier.io/signup', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== Generated with Cypress Studio ==== */\ncy.get(':nth-child(5) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(5) > .m-input-icon > .form-control').type('aaaaaaaa', {\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').type('andrew', {\n  force: true\n});\ncy.get('.transform-checkbox-icon').click({\n  force: true\n});\ncy.get('.m-checkbox > input').check({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').type('01211782854', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').type('anrewd@gmail.com', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get('#register-password').clear({\n  force: true\n});\ncy.get('#register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get(':nth-child(10) > .m-input-icon > .password-visibility > #visibility-a').click({\n  force: true\n});\ncy.get('#r-register-password').clear({\n  force: true\n});\ncy.get('#r-register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get('#register-submit-btn').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "c12ea304-6481-41ba-8d6c-1f6fcd9c22ac",
+              "parentUUID": "47031cba-833f-4875-9c11-bfcac0d8e80a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " case4",
+              "fullTitle": " registeration  case4",
+              "timedOut": null,
+              "duration": 19682,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('leave empty required field ');\ncy.visit('https://merchant.kashier.io/signup', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\n/* ==== Generated with Cypress Studio ==== */\ncy.get(':nth-child(6) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').type('andrew', {\n  force: true\n});\ncy.get('.transform-checkbox-icon').click({\n  force: true\n});\ncy.get('.m-checkbox > input').check({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').type('01211782854', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').type('anrewd@gmail.com', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get('#register-password').clear({\n  force: true\n});\ncy.get('#register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get(':nth-child(10) > .m-input-icon > .password-visibility > #visibility-a').click({\n  force: true\n});\ncy.get('#r-register-password').clear({\n  force: true\n});\ncy.get('#r-register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get('#register-submit-btn').click();\ncy.wait(6000);\ncy.wait(6000);\ncy.get('.m-login__signup').scrollIntoView();\ncy.get('.m-login__signup').screenshot();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "4138b630-152b-41ba-860c-2cf4c8bf7858",
+              "parentUUID": "47031cba-833f-4875-9c11-bfcac0d8e80a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5cc2642f-eb83-47e4-bc4c-9ff2e6da64c4",
+            "62939d24-af79-407c-8ef8-05ee326a238f",
+            "c12ea304-6481-41ba-8d6c-1f6fcd9c22ac",
+            "4138b630-152b-41ba-860c-2cf4c8bf7858"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 52519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
