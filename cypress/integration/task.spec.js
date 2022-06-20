@@ -55,7 +55,7 @@ describe(' registeration', function(){
       cy.get('.m-login__signup').screenshot()
      
     })
-    it(' case3', function(){
+    it.only(' case3', function(){
         cy.log('happy-path for registeration')
   
         cy.visit('https://merchant.kashier.io/signup', {

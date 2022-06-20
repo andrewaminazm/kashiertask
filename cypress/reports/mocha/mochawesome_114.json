@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-20T10:54:54.574Z",
+    "end": "2022-06-20T10:55:20.967Z",
+    "duration": 26393,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9e624aaa-c470-48b4-a7cd-11f9f1acfcae",
+      "title": "",
+      "fullFile": "cypress/integration/validregister.spec.js",
+      "file": "cypress/integration/validregister.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c061f290-ee10-4f0a-b9ad-78c37765590f",
+          "title": " registeration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " case1",
+              "fullTitle": " registeration  case1",
+              "timedOut": null,
+              "duration": 20453,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('happy-path for registeration');\ncy.visit('https://merchant.kashier.io/signup', {\n  headers: {\n    \"Accept-Encoding\": \"gzip, deflate, br\"\n  }\n});\ncy.get(':nth-child(5) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(5) > .m-input-icon > .form-control').type('aaaaaaaa', {\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(6) > .m-input-icon > .form-control').type('andrew', {\n  force: true\n});\ncy.get('.transform-checkbox-icon').click({\n  force: true\n});\ncy.get('.m-checkbox > input').check({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(8) > .m-input-icon > .form-control').type('01211782854', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').clear({\n  force: true\n});\ncy.get(':nth-child(9) > .m-input-icon > .form-control').type('anreeeewd@gmail.com', {\n  force: true\n});\ncy.get('#signup-form').click({\n  force: true\n});\ncy.get('#register-password').clear({\n  force: true\n});\ncy.get('#register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get(':nth-child(10) > .m-input-icon > .password-visibility > #visibility-a').click({\n  force: true\n});\ncy.get('#r-register-password').clear({\n  force: true\n});\ncy.get('#r-register-password').type('01211782855@Aa', {\n  force: true\n});\ncy.get('#register-submit-btn').click().then(() => {\n  // we are trying to return something\n  // from the .within callback,\n  // but it won't have any effect\n  cy.wait(7000);\n});",
+              "err": {},
+              "uuid": "92988597-7137-494d-9a16-a215e7626e93",
+              "parentUUID": "c061f290-ee10-4f0a-b9ad-78c37765590f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92988597-7137-494d-9a16-a215e7626e93"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20453,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
